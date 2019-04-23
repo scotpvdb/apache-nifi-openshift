@@ -32,10 +32,7 @@ if [ ! -z "${NIFI_JVM_DEBUGGER}" ]; then
     uncomment "java.arg.debug" ${nifi_bootstrap_file}
 fi
 
-su nifi
-
 echo "This is who I am..."
-whoami
 
 echo "About to list nifi install directories..."
 ls -l /opt/nifi/nifi-current
