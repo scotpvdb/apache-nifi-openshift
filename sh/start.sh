@@ -32,6 +32,8 @@ if [ ! -z "${NIFI_JVM_DEBUGGER}" ]; then
     uncomment "java.arg.debug" ${nifi_bootstrap_file}
 fi
 
+chown -R nifi /opt/nifi
+
 echo "About to list nifi install directories..."
 ls -l /opt/nifi/nifi-current
 ls -l /opt/nifi/nifi-current/conf
