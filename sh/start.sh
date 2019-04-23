@@ -34,6 +34,8 @@ fi
 
 sudo chown -R nifi /opt/nifi
 
+echo "This is who I am..." && echo whoami
+
 echo "About to list nifi install directories..."
 ls -l /opt/nifi/nifi-current
 ls -l /opt/nifi/nifi-current/conf
